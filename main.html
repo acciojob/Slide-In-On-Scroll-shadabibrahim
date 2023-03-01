@@ -43,7 +43,7 @@
   </div>
 
   <script>
-	  let imgs = document.querySelectorAll("img");
+	  let imgs = document.querySelectorAll(".slide-in");
       let addClass = imgs.forEach(i => {
         i.classList.add("active");
       });
@@ -61,6 +61,8 @@
         if (callNow) func.apply(context, args);
       };
     }
+window.addEventListener('scroll',debounce(addClass))
+	  
 
   </script>
 
